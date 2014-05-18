@@ -33,6 +33,12 @@ namespace IRCalc
             textBox2.Text = Convert.ToString(calc.InterestRate * 100);
             textBox3.Text = Convert.ToString(calc.MonthQtd);
             textBox4.Text = Convert.ToString(calc.TotalAmount);
+            targetToRadio();
+            updateDataGrid();
+        }
+
+        private void targetToRadio()
+        {
             var checkedRadio = panel1.Controls.OfType<RadioButton>().ElementAt(reverseTarget(target));
             checkedRadio.Checked = true;
         }
@@ -43,13 +49,37 @@ namespace IRCalc
             calc.InterestRate = textBox2.Text != "" ? Double.Parse(textBox2.Text) / 100 : 0.00;
             calc.MonthQtd = textBox3.Text != "" ? Int32.Parse(textBox3.Text) : 0;
             calc.TotalAmount = textBox4.Text != "" ? Double.Parse(textBox4.Text) : 0.00;
+            radioToTarget();
+        }
+
+        private void radioToTarget()
+        {
             var checkedRadio = panel1.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked);
             target = reverseTarget(panel1.Controls.IndexOf(checkedRadio));
         }
 
-        private void calculateTarget()
+        private void updateDataGrid()
         {
-            viewToModel(calc);
+            int monthQtd = calc.MonthQtd;
+            dataGridView1.Rows.Clear();
+            for (var i = 1; i >= 1 && i <= monthQtd; i++)
+            {
+                Calc line = this.calc;
+                line.MonthQtd = i;
+                this.calcTarget(line);
+                dataGridView1.Rows.Add(calc.MonthQtd, calc.InstallmentAmount, calc.TotalAmount);
+            }
+        }
+
+        private void prepareAndCalc()
+        {
+            viewToModel(this.calc);
+            calcTarget(this.calc);
+            modelToView(this.calc);
+        }
+
+        private void calcTarget(Calc calc)
+        {
             switch (target)
             {
                 case 0:
@@ -65,23 +95,24 @@ namespace IRCalc
                     service.TotalAmount(calc);
                     break;
             }
-            modelToView(calc);
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            calc = new Calc();
-            service = new CompoundCalcService();
-            calc.InstallmentAmount = 1000.00;
-            calc.InterestRate = 0.01;
-            calc.MonthQtd = 12;
             target = 3;
+            service = new CompoundCalcService();
+            calc = new Calc(1000.00, 0.01, 12, 0.00);
+
+            dataGridView1.Columns.Add("month", "i18n.calc.month");
+            dataGridView1.Columns.Add("installmentAmount", "i18n.calc.installment");
+            dataGridView1.Columns.Add("totalAmount", "i18n.calc.total");
+
             modelToView(calc);
         }
 
         private void textBox_Leave(object sender, EventArgs e)
         {
-            calculateTarget();
+            prepareAndCalc();
         }
 
     }

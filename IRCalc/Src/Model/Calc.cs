@@ -7,6 +7,18 @@ namespace IRCalc.Src.Model
 {
     class Calc {
 
+        public Calc()
+        {
+        }
+
+        public Calc(Double installmentAmount, Double interestRate, Int32 monthQtd, Double totalAmount)
+        {
+            this.InstallmentAmount = installmentAmount;
+            this.InterestRate = interestRate;
+            this.MonthQtd = monthQtd;
+            this.TotalAmount = totalAmount;
+        }
+
         private Double _installmentAmount;
 
         public Double InstallmentAmount
