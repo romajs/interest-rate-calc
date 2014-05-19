@@ -1,6 +1,6 @@
 ﻿namespace IRCalc
 {
-    partial class Form1
+    partial class IRCalcForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,183 +28,139 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IRCalcForm));
+            this.lblInstallmentAmount = new System.Windows.Forms.Label();
+            this.txtInstallmentAmount = new System.Windows.Forms.TextBox();
+            this.txtInterestRate = new System.Windows.Forms.TextBox();
+            this.lblInterestRate = new System.Windows.Forms.Label();
+            this.lblMonthQtd = new System.Windows.Forms.Label();
+            this.txtMonthQtd = new System.Windows.Forms.TextBox();
+            this.txtTotalAmount = new System.Windows.Forms.TextBox();
+            this.lblTotalAmount = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.gpOptions = new System.Windows.Forms.GroupBox();
+            this.rdInterestRate = new System.Windows.Forms.RadioButton();
+            this.pnTargetRadios = new System.Windows.Forms.Panel();
+            this.rdTotalAmount = new System.Windows.Forms.RadioButton();
+            this.rdMonthQtd = new System.Windows.Forms.RadioButton();
+            this.rdInstallmentAmount = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.pnTargetRadios.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // lblInstallmentAmount
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            resources.ApplyResources(this.lblInstallmentAmount, "lblInstallmentAmount");
+            this.lblInstallmentAmount.Name = "lblInstallmentAmount";
             // 
-            // textBox1
+            // txtInstallmentAmount
             // 
-            this.textBox1.Location = new System.Drawing.Point(64, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Leave += new System.EventHandler(this.textBox_Leave);
+            resources.ApplyResources(this.txtInstallmentAmount, "txtInstallmentAmount");
+            this.txtInstallmentAmount.Name = "txtInstallmentAmount";
+            this.txtInstallmentAmount.Leave += new System.EventHandler(this.txtCalcField_Leave);
             // 
-            // textBox2
+            // txtInterestRate
             // 
-            this.textBox2.Location = new System.Drawing.Point(64, 39);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.Leave += new System.EventHandler(this.textBox_Leave);
+            resources.ApplyResources(this.txtInterestRate, "txtInterestRate");
+            this.txtInterestRate.Name = "txtInterestRate";
+            this.txtInterestRate.Leave += new System.EventHandler(this.txtCalcField_Leave);
             // 
-            // label2
+            // lblInterestRate
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 42);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "label2";
+            resources.ApplyResources(this.lblInterestRate, "lblInterestRate");
+            this.lblInterestRate.Name = "lblInterestRate";
             // 
-            // label3
+            // lblMonthQtd
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 69);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "label3";
+            resources.ApplyResources(this.lblMonthQtd, "lblMonthQtd");
+            this.lblMonthQtd.Name = "lblMonthQtd";
             // 
-            // textBox3
+            // txtMonthQtd
             // 
-            this.textBox3.Location = new System.Drawing.Point(64, 66);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 5;
-            this.textBox3.Leave += new System.EventHandler(this.textBox_Leave);
+            resources.ApplyResources(this.txtMonthQtd, "txtMonthQtd");
+            this.txtMonthQtd.Name = "txtMonthQtd";
+            this.txtMonthQtd.Leave += new System.EventHandler(this.txtCalcField_Leave);
             // 
-            // textBox4
+            // txtTotalAmount
             // 
-            this.textBox4.Location = new System.Drawing.Point(64, 93);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 6;
-            this.textBox4.Leave += new System.EventHandler(this.textBox_Leave);
+            resources.ApplyResources(this.txtTotalAmount, "txtTotalAmount");
+            this.txtTotalAmount.Name = "txtTotalAmount";
+            this.txtTotalAmount.Leave += new System.EventHandler(this.txtCalcField_Leave);
             // 
-            // label4
+            // lblTotalAmount
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 96);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "label4";
+            resources.ApplyResources(this.lblTotalAmount, "lblTotalAmount");
+            this.lblTotalAmount.Name = "lblTotalAmount";
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(15, 131);
+            resources.ApplyResources(this.dataGridView1, "dataGridView1");
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(355, 330);
-            this.dataGridView1.TabIndex = 8;
             // 
-            // groupBox1
+            // gpOptions
             // 
-            this.groupBox1.Location = new System.Drawing.Point(193, 6);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(177, 107);
-            this.groupBox1.TabIndex = 9;
-            this.groupBox1.TabStop = false;
+            resources.ApplyResources(this.gpOptions, "gpOptions");
+            this.gpOptions.Name = "gpOptions";
+            this.gpOptions.TabStop = false;
             // 
-            // radioButton2
+            // rdInterestRate
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(3, 30);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(14, 13);
-            this.radioButton2.TabIndex = 11;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.rdInterestRate, "rdInterestRate");
+            this.rdInterestRate.Name = "rdInterestRate";
+            this.rdInterestRate.TabStop = true;
+            this.rdInterestRate.UseVisualStyleBackColor = true;
             // 
-            // panel1
+            // pnTargetRadios
             // 
-            this.panel1.Controls.Add(this.radioButton4);
-            this.panel1.Controls.Add(this.radioButton3);
-            this.panel1.Controls.Add(this.radioButton2);
-            this.panel1.Controls.Add(this.radioButton1);
-            this.panel1.Location = new System.Drawing.Point(170, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(18, 101);
-            this.panel1.TabIndex = 11;
+            this.pnTargetRadios.Controls.Add(this.rdTotalAmount);
+            this.pnTargetRadios.Controls.Add(this.rdMonthQtd);
+            this.pnTargetRadios.Controls.Add(this.rdInterestRate);
+            this.pnTargetRadios.Controls.Add(this.rdInstallmentAmount);
+            resources.ApplyResources(this.pnTargetRadios, "pnTargetRadios");
+            this.pnTargetRadios.Name = "pnTargetRadios";
             // 
-            // radioButton4
+            // rdTotalAmount
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(3, 85);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(14, 13);
-            this.radioButton4.TabIndex = 13;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.rdTotalAmount, "rdTotalAmount");
+            this.rdTotalAmount.Name = "rdTotalAmount";
+            this.rdTotalAmount.TabStop = true;
+            this.rdTotalAmount.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // rdMonthQtd
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(3, 57);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(14, 13);
-            this.radioButton3.TabIndex = 12;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.rdMonthQtd, "rdMonthQtd");
+            this.rdMonthQtd.Name = "rdMonthQtd";
+            this.rdMonthQtd.TabStop = true;
+            this.rdMonthQtd.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rdInstallmentAmount
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(3, 3);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(14, 13);
-            this.radioButton1.TabIndex = 10;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.rdInstallmentAmount, "rdInstallmentAmount");
+            this.rdInstallmentAmount.Name = "rdInstallmentAmount";
+            this.rdInstallmentAmount.TabStop = true;
+            this.rdInstallmentAmount.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // IRCalcForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(386, 473);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.pnTargetRadios);
+            this.Controls.Add(this.gpOptions);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
-            this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Controls.Add(this.lblTotalAmount);
+            this.Controls.Add(this.txtTotalAmount);
+            this.Controls.Add(this.txtMonthQtd);
+            this.Controls.Add(this.lblMonthQtd);
+            this.Controls.Add(this.lblInterestRate);
+            this.Controls.Add(this.txtInterestRate);
+            this.Controls.Add(this.txtInstallmentAmount);
+            this.Controls.Add(this.lblInstallmentAmount);
+            this.Name = "IRCalcForm";
+            this.Load += new System.EventHandler(this.Form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.pnTargetRadios.ResumeLayout(false);
+            this.pnTargetRadios.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -212,21 +168,21 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblInstallmentAmount;
+        private System.Windows.Forms.TextBox txtInstallmentAmount;
+        private System.Windows.Forms.TextBox txtInterestRate;
+        private System.Windows.Forms.Label lblInterestRate;
+        private System.Windows.Forms.Label lblMonthQtd;
+        private System.Windows.Forms.TextBox txtMonthQtd;
+        private System.Windows.Forms.TextBox txtTotalAmount;
+        private System.Windows.Forms.Label lblTotalAmount;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.GroupBox gpOptions;
+        private System.Windows.Forms.RadioButton rdInterestRate;
+        private System.Windows.Forms.Panel pnTargetRadios;
+        private System.Windows.Forms.RadioButton rdTotalAmount;
+        private System.Windows.Forms.RadioButton rdMonthQtd;
+        private System.Windows.Forms.RadioButton rdInstallmentAmount;
 
     }
 }

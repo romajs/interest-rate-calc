@@ -117,4 +117,379 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblInstallmentAmount.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lblInstallmentAmount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 15</value>
+  </data>
+  <data name="lblInstallmentAmount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 13</value>
+  </data>
+  <data name="lblInstallmentAmount.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblInstallmentAmount.Text" xml:space="preserve">
+    <value>Installment Amount</value>
+  </data>
+  <data name="&gt;&gt;lblInstallmentAmount.Name" xml:space="preserve">
+    <value>lblInstallmentAmount</value>
+  </data>
+  <data name="&gt;&gt;lblInstallmentAmount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblInstallmentAmount.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblInstallmentAmount.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="txtInstallmentAmount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 12</value>
+  </data>
+  <data name="txtInstallmentAmount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="txtInstallmentAmount.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txtInstallmentAmount.Name" xml:space="preserve">
+    <value>txtInstallmentAmount</value>
+  </data>
+  <data name="&gt;&gt;txtInstallmentAmount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtInstallmentAmount.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtInstallmentAmount.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="txtInterestRate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 39</value>
+  </data>
+  <data name="txtInterestRate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="txtInterestRate.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;txtInterestRate.Name" xml:space="preserve">
+    <value>txtInterestRate</value>
+  </data>
+  <data name="&gt;&gt;txtInterestRate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtInterestRate.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtInterestRate.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="lblInterestRate.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblInterestRate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 42</value>
+  </data>
+  <data name="lblInterestRate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 13</value>
+  </data>
+  <data name="lblInterestRate.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lblInterestRate.Text" xml:space="preserve">
+    <value>Interest Rate</value>
+  </data>
+  <data name="&gt;&gt;lblInterestRate.Name" xml:space="preserve">
+    <value>lblInterestRate</value>
+  </data>
+  <data name="&gt;&gt;lblInterestRate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblInterestRate.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblInterestRate.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lblMonthQtd.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblMonthQtd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 69</value>
+  </data>
+  <data name="lblMonthQtd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 13</value>
+  </data>
+  <data name="lblMonthQtd.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lblMonthQtd.Text" xml:space="preserve">
+    <value>Month Qtd</value>
+  </data>
+  <data name="&gt;&gt;lblMonthQtd.Name" xml:space="preserve">
+    <value>lblMonthQtd</value>
+  </data>
+  <data name="&gt;&gt;lblMonthQtd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblMonthQtd.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblMonthQtd.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="txtMonthQtd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 66</value>
+  </data>
+  <data name="txtMonthQtd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="txtMonthQtd.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;txtMonthQtd.Name" xml:space="preserve">
+    <value>txtMonthQtd</value>
+  </data>
+  <data name="&gt;&gt;txtMonthQtd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtMonthQtd.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtMonthQtd.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="txtTotalAmount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 93</value>
+  </data>
+  <data name="txtTotalAmount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="txtTotalAmount.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;txtTotalAmount.Name" xml:space="preserve">
+    <value>txtTotalAmount</value>
+  </data>
+  <data name="&gt;&gt;txtTotalAmount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtTotalAmount.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtTotalAmount.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblTotalAmount.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblTotalAmount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 96</value>
+  </data>
+  <data name="lblTotalAmount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 13</value>
+  </data>
+  <data name="lblTotalAmount.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lblTotalAmount.Text" xml:space="preserve">
+    <value>Total Amount</value>
+  </data>
+  <data name="&gt;&gt;lblTotalAmount.Name" xml:space="preserve">
+    <value>lblTotalAmount</value>
+  </data>
+  <data name="&gt;&gt;lblTotalAmount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTotalAmount.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblTotalAmount.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 131</value>
+  </data>
+  <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>355, 330</value>
+  </data>
+  <data name="dataGridView1.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.Name" xml:space="preserve">
+    <value>dataGridView1</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="gpOptions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>193, 6</value>
+  </data>
+  <data name="gpOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 107</value>
+  </data>
+  <data name="gpOptions.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;gpOptions.Name" xml:space="preserve">
+    <value>gpOptions</value>
+  </data>
+  <data name="&gt;&gt;gpOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gpOptions.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gpOptions.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="rdInterestRate.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rdInterestRate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 30</value>
+  </data>
+  <data name="rdInterestRate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 13</value>
+  </data>
+  <data name="rdInterestRate.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;rdInterestRate.Name" xml:space="preserve">
+    <value>rdInterestRate</value>
+  </data>
+  <data name="&gt;&gt;rdInterestRate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rdInterestRate.Parent" xml:space="preserve">
+    <value>pnTargetRadios</value>
+  </data>
+  <data name="&gt;&gt;rdInterestRate.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="rdTotalAmount.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rdTotalAmount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 85</value>
+  </data>
+  <data name="rdTotalAmount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 13</value>
+  </data>
+  <data name="rdTotalAmount.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;rdTotalAmount.Name" xml:space="preserve">
+    <value>rdTotalAmount</value>
+  </data>
+  <data name="&gt;&gt;rdTotalAmount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rdTotalAmount.Parent" xml:space="preserve">
+    <value>pnTargetRadios</value>
+  </data>
+  <data name="&gt;&gt;rdTotalAmount.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="rdMonthQtd.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rdMonthQtd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 57</value>
+  </data>
+  <data name="rdMonthQtd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 13</value>
+  </data>
+  <data name="rdMonthQtd.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;rdMonthQtd.Name" xml:space="preserve">
+    <value>rdMonthQtd</value>
+  </data>
+  <data name="&gt;&gt;rdMonthQtd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rdMonthQtd.Parent" xml:space="preserve">
+    <value>pnTargetRadios</value>
+  </data>
+  <data name="&gt;&gt;rdMonthQtd.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="rdInstallmentAmount.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rdInstallmentAmount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="rdInstallmentAmount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 13</value>
+  </data>
+  <data name="rdInstallmentAmount.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;rdInstallmentAmount.Name" xml:space="preserve">
+    <value>rdInstallmentAmount</value>
+  </data>
+  <data name="&gt;&gt;rdInstallmentAmount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rdInstallmentAmount.Parent" xml:space="preserve">
+    <value>pnTargetRadios</value>
+  </data>
+  <data name="&gt;&gt;rdInstallmentAmount.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="pnTargetRadios.Location" type="System.Drawing.Point, System.Drawing">
+    <value>170, 12</value>
+  </data>
+  <data name="pnTargetRadios.Size" type="System.Drawing.Size, System.Drawing">
+    <value>18, 101</value>
+  </data>
+  <data name="pnTargetRadios.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;pnTargetRadios.Name" xml:space="preserve">
+    <value>pnTargetRadios</value>
+  </data>
+  <data name="&gt;&gt;pnTargetRadios.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnTargetRadios.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pnTargetRadios.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>386, 473</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Interest Rate Calculator</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>IRCalcForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

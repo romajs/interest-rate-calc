@@ -11,9 +11,9 @@ using IRCalc.Src.Service;
 
 namespace IRCalc
 {
-    public partial class Form1 : Form
+    public partial class IRCalcForm : Form
     {
-        public Form1()
+        public IRCalcForm()
         {
             InitializeComponent();
         }
@@ -29,53 +29,53 @@ namespace IRCalc
 
         private void modelToView(Calc calc)
         {
-            textBox1.Text = Convert.ToString(calc.InstallmentAmount);
-            textBox2.Text = Convert.ToString(calc.InterestRate * 100);
-            textBox3.Text = Convert.ToString(calc.MonthQtd);
-            textBox4.Text = Convert.ToString(calc.TotalAmount);
-            targetToRadio();
-            updateDataGrid();
+            txtInstallmentAmount.Text = Convert.ToString(calc.InstallmentAmount);
+            txtInterestRate.Text = Convert.ToString(calc.InterestRate * 100);
+            txtMonthQtd.Text = Convert.ToString(calc.MonthQtd);
+            txtTotalAmount.Text = Convert.ToString(calc.TotalAmount);
+            this.targetToRadio();
+            this.updateDataGrid();
         }
 
         private void targetToRadio()
         {
-            var checkedRadio = panel1.Controls.OfType<RadioButton>().ElementAt(reverseTarget(target));
+            var checkedRadio = pnTargetRadios.Controls.OfType<RadioButton>().ElementAt(reverseTarget(this.target));
             checkedRadio.Checked = true;
         }
 
         private void viewToModel(Calc calc)
         {
-            calc.InstallmentAmount = textBox1.Text != "" ? Double.Parse(textBox1.Text) : 0.00;
-            calc.InterestRate = textBox2.Text != "" ? Double.Parse(textBox2.Text) / 100 : 0.00;
-            calc.MonthQtd = textBox3.Text != "" ? Int32.Parse(textBox3.Text) : 0;
-            calc.TotalAmount = textBox4.Text != "" ? Double.Parse(textBox4.Text) : 0.00;
-            radioToTarget();
+            calc.InstallmentAmount = txtInstallmentAmount.Text != "" ? Double.Parse(txtInstallmentAmount.Text) : 0.00;
+            calc.InterestRate = txtInterestRate.Text != "" ? Double.Parse(txtInterestRate.Text) / 100 : 0.00;
+            calc.MonthQtd = txtMonthQtd.Text != "" ? Int32.Parse(txtMonthQtd.Text) : 0;
+            calc.TotalAmount = txtTotalAmount.Text != "" ? Double.Parse(txtTotalAmount.Text) : 0.00;
+            this.radioToTarget();
         }
 
         private void radioToTarget()
         {
-            var checkedRadio = panel1.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked);
-            target = reverseTarget(panel1.Controls.IndexOf(checkedRadio));
+            var checkedRadio = pnTargetRadios.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked);
+            this.target = reverseTarget(pnTargetRadios.Controls.IndexOf(checkedRadio));
         }
 
         private void updateDataGrid()
         {
             int monthQtd = calc.MonthQtd;
-            dataGridView1.Rows.Clear();
+            this.dataGridView1.Rows.Clear();
             for (var i = 1; i >= 1 && i <= monthQtd; i++)
             {
                 Calc line = this.calc;
                 line.MonthQtd = i;
                 this.calcTarget(line);
-                dataGridView1.Rows.Add(calc.MonthQtd, calc.InstallmentAmount, calc.TotalAmount);
+                this.dataGridView1.Rows.Add(calc.MonthQtd, calc.InstallmentAmount, calc.TotalAmount);
             }
         }
 
         private void prepareAndCalc()
         {
-            viewToModel(this.calc);
-            calcTarget(this.calc);
-            modelToView(this.calc);
+            this.viewToModel(this.calc);
+            this.calcTarget(this.calc);
+            this.modelToView(this.calc);
         }
 
         private void calcTarget(Calc calc)
@@ -83,36 +83,42 @@ namespace IRCalc
             switch (target)
             {
                 case 0:
-                    service.InstallmenAmount(calc);
+                    this.service.InstallmenAmount(calc);
                     break;
                 case 1:
-                    service.InterestRate(calc);
+                    this.service.InterestRate(calc);
                     break;
                 case 2:
-                    service.MonthQtd(calc);
+                    this.service.MonthQtd(calc);
                     break;
                 case 3:
-                    service.TotalAmount(calc);
+                    this.service.TotalAmount(calc);
                     break;
             }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void initiateDataGrid()
         {
-            target = 3;
-            service = new CompoundCalcService();
-            calc = new Calc(1000.00, 0.01, 12, 0.00);
-
-            dataGridView1.Columns.Add("month", "i18n.calc.month");
-            dataGridView1.Columns.Add("installmentAmount", "i18n.calc.installment");
-            dataGridView1.Columns.Add("totalAmount", "i18n.calc.total");
-
-            modelToView(calc);
+            this.dataGridView1.Columns.Add("month", "i18n_calc_month");
+            this.dataGridView1.Columns.Add("installmentAmount", "i18n_calc_installment");
+            this.dataGridView1.Columns.Add("totalAmount", "i18n_calc_total");
         }
 
-        private void textBox_Leave(object sender, EventArgs e)
+        private void Form_Load(object sender, EventArgs e)
         {
-            prepareAndCalc();
+            this.target = 3;
+            this.service = new CompoundCalcService();
+            this.calc = new Calc(1000.00, 0.01, 12, 0.00);
+
+            initiateDataGrid();
+
+            this.modelToView(this.calc);
+            this.calcTarget(this.calc);
+        }
+
+        private void txtCalcField_Leave(object sender, EventArgs e)
+        {
+            this.prepareAndCalc();
         }
 
     }
