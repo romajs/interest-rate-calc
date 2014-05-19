@@ -97,20 +97,11 @@ namespace IRCalc
             }
         }
 
-        private void initiateDataGrid()
-        {
-            this.dataGridView1.Columns.Add("month", "i18n_calc_month");
-            this.dataGridView1.Columns.Add("installmentAmount", "i18n_calc_installment");
-            this.dataGridView1.Columns.Add("totalAmount", "i18n_calc_total");
-        }
-
         private void Form_Load(object sender, EventArgs e)
         {
             this.target = 3;
             this.service = new CompoundCalcService();
             this.calc = new Calc(1000.00, 0.01, 12, 0.00);
-
-            initiateDataGrid();
 
             this.modelToView(this.calc);
             this.calcTarget(this.calc);
