@@ -311,30 +311,30 @@
   <data name="&gt;&gt;lblTotalAmount.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="month.UserAddedColumn" type="System.Boolean, mscorlib">
+  <metadata name="month.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </data>
+  </metadata>
   <data name="month.HeaderText" xml:space="preserve">
     <value>Month</value>
   </data>
   <data name="month.Width" type="System.Int32, mscorlib">
     <value>68</value>
   </data>
-  <data name="installmentAmount.UserAddedColumn" type="System.Boolean, mscorlib">
+  <metadata name="installmentAmount.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </data>
+  </metadata>
   <data name="installmentAmount.HeaderText" xml:space="preserve">
     <value>Installment Amount</value>
   </data>
-  <data name="totalAmount.UserAddedColumn" type="System.Boolean, mscorlib">
+  <metadata name="totalAmount.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </data>
+  </metadata>
   <data name="totalAmount.HeaderText" xml:space="preserve">
     <value>Total Amount</value>
   </data>
-  <data name="riseAmount.UserAddedColumn" type="System.Boolean, mscorlib">
+  <metadata name="riseAmount.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </data>
+  </metadata>
   <data name="riseAmount.HeaderText" xml:space="preserve">
     <value>Rise Amount</value>
   </data>
@@ -366,6 +366,21 @@
   <data name="gpOptions.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
   </data>
+  <data name="rdCompoundOption.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rdCompoundOption.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 74</value>
+  </data>
+  <data name="rdCompoundOption.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 17</value>
+  </data>
+  <data name="rdCompoundOption.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="rdCompoundOption.Text" xml:space="preserve">
+    <value>rdCompoundOption</value>
+  </data>
   <data name="&gt;&gt;rdCompoundOption.Name" xml:space="preserve">
     <value>rdCompoundOption</value>
   </data>
@@ -377,6 +392,21 @@
   </data>
   <data name="&gt;&gt;rdCompoundOption.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="rdSimpleOption.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rdSimpleOption.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 47</value>
+  </data>
+  <data name="rdSimpleOption.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 17</value>
+  </data>
+  <data name="rdSimpleOption.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rdSimpleOption.Text" xml:space="preserve">
+    <value>rdSimpleOption</value>
   </data>
   <data name="&gt;&gt;rdSimpleOption.Name" xml:space="preserve">
     <value>rdSimpleOption</value>
@@ -444,6 +474,21 @@
   <data name="pnTargetRadios.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
+  <data name="rdTotalAmount.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="rdTotalAmount.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rdTotalAmount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 85</value>
+  </data>
+  <data name="rdTotalAmount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 13</value>
+  </data>
+  <data name="rdTotalAmount.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
   <data name="&gt;&gt;rdTotalAmount.Name" xml:space="preserve">
     <value>rdTotalAmount</value>
   </data>
@@ -456,6 +501,21 @@
   <data name="&gt;&gt;rdTotalAmount.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="rdMonthQtd.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="rdMonthQtd.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rdMonthQtd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 57</value>
+  </data>
+  <data name="rdMonthQtd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 13</value>
+  </data>
+  <data name="rdMonthQtd.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
   <data name="&gt;&gt;rdMonthQtd.Name" xml:space="preserve">
     <value>rdMonthQtd</value>
   </data>
@@ -467,6 +527,21 @@
   </data>
   <data name="&gt;&gt;rdMonthQtd.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="rdInstallmentAmount.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="rdInstallmentAmount.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rdInstallmentAmount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="rdInstallmentAmount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 13</value>
+  </data>
+  <data name="rdInstallmentAmount.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
   </data>
   <data name="&gt;&gt;rdInstallmentAmount.Name" xml:space="preserve">
     <value>rdInstallmentAmount</value>
@@ -501,51 +576,6 @@
   <data name="&gt;&gt;pnTargetRadios.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="rdTotalAmount.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="rdTotalAmount.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="rdTotalAmount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 85</value>
-  </data>
-  <data name="rdTotalAmount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>14, 13</value>
-  </data>
-  <data name="rdTotalAmount.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="rdMonthQtd.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="rdMonthQtd.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="rdMonthQtd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 57</value>
-  </data>
-  <data name="rdMonthQtd.Size" type="System.Drawing.Size, System.Drawing">
-    <value>14, 13</value>
-  </data>
-  <data name="rdMonthQtd.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="rdInstallmentAmount.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="rdInstallmentAmount.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="rdInstallmentAmount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="rdInstallmentAmount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>14, 13</value>
-  </data>
-  <data name="rdInstallmentAmount.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 12</value>
   </data>
@@ -567,39 +597,9 @@
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="rdSimpleOption.AutoSize" type="System.Boolean, mscorlib">
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </data>
-  <data name="rdSimpleOption.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 47</value>
-  </data>
-  <data name="rdSimpleOption.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 17</value>
-  </data>
-  <data name="rdSimpleOption.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="rdSimpleOption.Text" xml:space="preserve">
-    <value>rdSimpleOption</value>
-  </data>
-  <data name="rdCompoundOption.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="rdCompoundOption.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 74</value>
-  </data>
-  <data name="rdCompoundOption.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 17</value>
-  </data>
-  <data name="rdCompoundOption.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="rdCompoundOption.Text" xml:space="preserve">
-    <value>rdCompoundOption</value>
-  </data>
-  <data name="$this.Localizable" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
+  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
@@ -641,8 +641,5 @@
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="currencyMask" xml:space="preserve">
-    <value />
   </data>
 </root>

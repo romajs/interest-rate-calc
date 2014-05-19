@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IRCalcForm));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblInstallmentAmount = new System.Windows.Forms.Label();
             this.txtInstallmentAmount = new System.Windows.Forms.TextBox();
             this.txtInterestRate = new System.Windows.Forms.TextBox();
@@ -187,24 +191,39 @@
             // 
             // month
             // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.NullValue = null;
+            this.month.DefaultCellStyle = dataGridViewCellStyle1;
             resources.ApplyResources(this.month, "month");
             this.month.Name = "month";
             this.month.ReadOnly = true;
             // 
             // installmentAmount
             // 
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.Format = "C2";
+            dataGridViewCellStyle2.NullValue = null;
+            this.installmentAmount.DefaultCellStyle = dataGridViewCellStyle2;
             resources.ApplyResources(this.installmentAmount, "installmentAmount");
             this.installmentAmount.Name = "installmentAmount";
             this.installmentAmount.ReadOnly = true;
             // 
             // totalAmount
             // 
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.Format = "C2";
+            dataGridViewCellStyle3.NullValue = null;
+            this.totalAmount.DefaultCellStyle = dataGridViewCellStyle3;
             resources.ApplyResources(this.totalAmount, "totalAmount");
             this.totalAmount.Name = "totalAmount";
             this.totalAmount.ReadOnly = true;
             // 
             // riseAmount
             // 
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.Format = "C2";
+            dataGridViewCellStyle4.NullValue = null;
+            this.riseAmount.DefaultCellStyle = dataGridViewCellStyle4;
             resources.ApplyResources(this.riseAmount, "riseAmount");
             this.riseAmount.Name = "riseAmount";
             this.riseAmount.ReadOnly = true;
