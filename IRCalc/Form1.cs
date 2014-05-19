@@ -67,7 +67,8 @@ namespace IRCalc
                 Calc line = this.calc;
                 line.MonthQtd = i;
                 this.calcTarget(line);
-                this.dataGridView1.Rows.Add(calc.MonthQtd, calc.InstallmentAmount, calc.TotalAmount);
+                Double riseAmount = calc.TotalAmount - calc.InstallmentAmount;
+                this.dataGridView1.Rows.Add(calc.MonthQtd, calc.InstallmentAmount.ToString("C2"), calc.TotalAmount.ToString("C2"), riseAmount.ToString("C2"));
             }
         }
 
