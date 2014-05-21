@@ -145,5 +145,10 @@ namespace IRCalc
             this.prepareAndCalc();
         }
 
+        private void rdTargetService_Click(object sender, EventArgs e)
+        {
+            this.prepareAndCalc();
+        }
+
     }
 }

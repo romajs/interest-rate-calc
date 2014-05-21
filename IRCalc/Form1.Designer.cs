@@ -169,6 +169,7 @@
             this.rdCompoundOption.Name = "rdCompoundOption";
             this.rdCompoundOption.TabStop = true;
             this.rdCompoundOption.UseVisualStyleBackColor = true;
+            this.rdCompoundOption.Click += new System.EventHandler(this.rdTargetService_Click);
             // 
             // rdSimpleOption
             // 
@@ -176,6 +177,7 @@
             this.rdSimpleOption.Name = "rdSimpleOption";
             this.rdSimpleOption.TabStop = true;
             this.rdSimpleOption.UseVisualStyleBackColor = true;
+            this.rdSimpleOption.Click += new System.EventHandler(this.rdTargetService_Click);
             // 
             // rdInterestRate
             // 

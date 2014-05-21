@@ -370,7 +370,7 @@
     <value>True</value>
   </data>
   <data name="rdCompoundOption.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 74</value>
+    <value>27, 74</value>
   </data>
   <data name="rdCompoundOption.Size" type="System.Drawing.Size, System.Drawing">
     <value>116, 17</value>
@@ -379,7 +379,10 @@
     <value>1</value>
   </data>
   <data name="rdCompoundOption.Text" xml:space="preserve">
-    <value>Compount Interest Rate</value>
+    <value>Compound Interest Rate</value>
+  </data>
+  <data name="rdCompoundOption.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;rdCompoundOption.Name" xml:space="preserve">
     <value>rdCompoundOption</value>
@@ -397,7 +400,7 @@
     <value>True</value>
   </data>
   <data name="rdSimpleOption.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 47</value>
+    <value>27, 47</value>
   </data>
   <data name="rdSimpleOption.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 17</value>
@@ -407,6 +410,9 @@
   </data>
   <data name="rdSimpleOption.Text" xml:space="preserve">
     <value>Simple Interest Rate</value>
+  </data>
+  <data name="rdSimpleOption.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;rdSimpleOption.Name" xml:space="preserve">
     <value>rdSimpleOption</value>
