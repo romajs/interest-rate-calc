@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IRCalcForm));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.lblInstallmentAmount = new System.Windows.Forms.Label();
-            this.txtInstallmentAmount = new System.Windows.Forms.TextBox();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.lblInitialAmount = new System.Windows.Forms.Label();
+            this.txtInitialAmount = new System.Windows.Forms.TextBox();
             this.txtInterestRate = new System.Windows.Forms.TextBox();
             this.lblInterestRate = new System.Windows.Forms.Label();
             this.lblMonthQtd = new System.Windows.Forms.Label();
@@ -55,22 +55,25 @@
             this.rdMonthQtd = new System.Windows.Forms.RadioButton();
             this.rdInstallmentAmount = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblInstallmentAmount = new System.Windows.Forms.Label();
+            this.txtInstallmentAmount = new System.Windows.Forms.TextBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.gpOptions.SuspendLayout();
             this.pnTargetRadios.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // lblInstallmentAmount
+            // lblInitialAmount
             // 
-            resources.ApplyResources(this.lblInstallmentAmount, "lblInstallmentAmount");
-            this.lblInstallmentAmount.Name = "lblInstallmentAmount";
+            resources.ApplyResources(this.lblInitialAmount, "lblInitialAmount");
+            this.lblInitialAmount.Name = "lblInitialAmount";
             // 
-            // txtInstallmentAmount
+            // txtInitialAmount
             // 
-            resources.ApplyResources(this.txtInstallmentAmount, "txtInstallmentAmount");
-            this.txtInstallmentAmount.Name = "txtInstallmentAmount";
-            this.txtInstallmentAmount.Leave += new System.EventHandler(this.txtCalcField_Leave);
+            resources.ApplyResources(this.txtInitialAmount, "txtInitialAmount");
+            this.txtInitialAmount.Name = "txtInitialAmount";
+            this.txtInitialAmount.Leave += new System.EventHandler(this.txtCalcField_Leave);
             // 
             // txtInterestRate
             // 
@@ -118,39 +121,39 @@
             // 
             // month
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.NullValue = null;
-            this.month.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.NullValue = null;
+            this.month.DefaultCellStyle = dataGridViewCellStyle5;
             resources.ApplyResources(this.month, "month");
             this.month.Name = "month";
             this.month.ReadOnly = true;
             // 
             // installmentAmount
             // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.Format = "C2";
-            dataGridViewCellStyle2.NullValue = null;
-            this.installmentAmount.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.Format = "C2";
+            dataGridViewCellStyle6.NullValue = null;
+            this.installmentAmount.DefaultCellStyle = dataGridViewCellStyle6;
             resources.ApplyResources(this.installmentAmount, "installmentAmount");
             this.installmentAmount.Name = "installmentAmount";
             this.installmentAmount.ReadOnly = true;
             // 
             // totalAmount
             // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.Format = "C2";
-            dataGridViewCellStyle3.NullValue = null;
-            this.totalAmount.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.Format = "C2";
+            dataGridViewCellStyle7.NullValue = null;
+            this.totalAmount.DefaultCellStyle = dataGridViewCellStyle7;
             resources.ApplyResources(this.totalAmount, "totalAmount");
             this.totalAmount.Name = "totalAmount";
             this.totalAmount.ReadOnly = true;
             // 
             // riseAmount
             // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.Format = "C2";
-            dataGridViewCellStyle4.NullValue = null;
-            this.riseAmount.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.Format = "C2";
+            dataGridViewCellStyle8.NullValue = null;
+            this.riseAmount.DefaultCellStyle = dataGridViewCellStyle8;
             resources.ApplyResources(this.riseAmount, "riseAmount");
             this.riseAmount.Name = "riseAmount";
             this.riseAmount.ReadOnly = true;
@@ -189,6 +192,7 @@
             // pnTargetRadios
             // 
             resources.ApplyResources(this.pnTargetRadios, "pnTargetRadios");
+            this.pnTargetRadios.Controls.Add(this.radioButton1);
             this.pnTargetRadios.Controls.Add(this.rdTotalAmount);
             this.pnTargetRadios.Controls.Add(this.rdMonthQtd);
             this.pnTargetRadios.Controls.Add(this.rdInterestRate);
@@ -218,9 +222,11 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.lblInstallmentAmount);
-            this.panel1.Controls.Add(this.pnTargetRadios);
             this.panel1.Controls.Add(this.txtInstallmentAmount);
+            this.panel1.Controls.Add(this.lblInstallmentAmount);
+            this.panel1.Controls.Add(this.lblInitialAmount);
+            this.panel1.Controls.Add(this.pnTargetRadios);
+            this.panel1.Controls.Add(this.txtInitialAmount);
             this.panel1.Controls.Add(this.txtInterestRate);
             this.panel1.Controls.Add(this.lblInterestRate);
             this.panel1.Controls.Add(this.lblTotalAmount);
@@ -229,6 +235,23 @@
             this.panel1.Controls.Add(this.txtMonthQtd);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
+            // 
+            // lblInstallmentAmount
+            // 
+            resources.ApplyResources(this.lblInstallmentAmount, "lblInstallmentAmount");
+            this.lblInstallmentAmount.Name = "lblInstallmentAmount";
+            // 
+            // txtInstallmentAmount
+            // 
+            resources.ApplyResources(this.txtInstallmentAmount, "txtInstallmentAmount");
+            this.txtInstallmentAmount.Name = "txtInstallmentAmount";
+            // 
+            // radioButton1
+            // 
+            resources.ApplyResources(this.radioButton1, "radioButton1");
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.TabStop = true;
+            this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // IRCalcForm
             // 
@@ -252,8 +275,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblInstallmentAmount;
-        private System.Windows.Forms.TextBox txtInstallmentAmount;
+        private System.Windows.Forms.Label lblInitialAmount;
+        private System.Windows.Forms.TextBox txtInitialAmount;
         private System.Windows.Forms.TextBox txtInterestRate;
         private System.Windows.Forms.Label lblInterestRate;
         private System.Windows.Forms.Label lblMonthQtd;
@@ -274,6 +297,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn installmentAmount;
         private System.Windows.Forms.DataGridViewTextBoxColumn totalAmount;
         private System.Windows.Forms.DataGridViewTextBoxColumn riseAmount;
+        private System.Windows.Forms.TextBox txtInstallmentAmount;
+        private System.Windows.Forms.Label lblInstallmentAmount;
+        private System.Windows.Forms.RadioButton radioButton1;
 
     }
 }

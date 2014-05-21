@@ -8,7 +8,7 @@ namespace IRCalc.Src.Service
 {
     interface CalcService
     {
-        void InstallmenAmount(Calc calc);
+        void InitialAmount(Calc calc);
 
         void InterestRate(Calc calc);
 

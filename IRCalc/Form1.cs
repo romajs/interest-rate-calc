@@ -27,10 +27,11 @@ namespace IRCalc
 
         private void modelToView(Calc calc)
         {
-            txtInstallmentAmount.Text = calc.InstallmentAmount.ToString("C2");
+            txtInitialAmount.Text = calc.InitialAmount.ToString("C2");
             txtInterestRate.Text = Convert.ToString(calc.InterestRate * 100);
             txtMonthQtd.Text = Convert.ToString(calc.MonthQtd);
             txtTotalAmount.Text = calc.TotalAmount.ToString("C2");
+            txtInstallmentAmount.Text = calc.InstallmentAmount.ToString("C2");
             this.targetFieldToRadio();
             this.targetServiceToRadio();
             this.updateDataGrid();
@@ -67,10 +68,11 @@ namespace IRCalc
 
         private void viewToModel(Calc calc)
         {
-            calc.InstallmentAmount = txtInstallmentAmount.Text != "" ? Double.Parse(txtInstallmentAmount.Text, NumberStyles.Currency) : 0.00;
+            calc.InitialAmount = txtInitialAmount.Text != "" ? Double.Parse(txtInitialAmount.Text, NumberStyles.Currency) : 0.00;
             calc.InterestRate = txtInterestRate.Text != "" ? Double.Parse(txtInterestRate.Text, NumberStyles.Float) / 100 : 0.00;
             calc.MonthQtd = txtMonthQtd.Text != "" ? Int32.Parse(txtMonthQtd.Text) : 0;
             calc.TotalAmount = txtTotalAmount.Text != "" ? Double.Parse(txtTotalAmount.Text, NumberStyles.Currency) : 0.00;
+            calc.InstallmentAmount = txtInitialAmount.Text != "" ? Double.Parse(txtInstallmentAmount.Text, NumberStyles.Currency) : 0.00;
             this.radioToTargetField();
             this.radioToTargetService();
         }
@@ -93,8 +95,8 @@ namespace IRCalc
             {
                 Calc line = this.calc;
                 line.MonthQtd = i;
-                this.calcTarget(line);
-                Double riseAmount = calc.TotalAmount - calc.InstallmentAmount;
+                this.service.TotalAmount(calc);
+                Double riseAmount = calc.TotalAmount - calc.InitialAmount;
                 this.dataGridView1.Rows.Add(calc.MonthQtd, calc.InstallmentAmount, calc.TotalAmount, riseAmount);
             }
         }
@@ -112,13 +114,13 @@ namespace IRCalc
             switch (targetField)
             {
                 case 0:
-                    this.service.InstallmenAmount(calc);
+                    this.service.InitialAmount(calc);
                     break;
                 case 1:
-                    this.service.InterestRate(calc);
+                    this.service.MonthQtd(calc);
                     break;
                 case 2:
-                    this.service.MonthQtd(calc);
+                    this.service.InterestRate(calc);
                     break;
                 case 3:
                     this.service.TotalAmount(calc);
@@ -128,7 +130,7 @@ namespace IRCalc
 
         private void Form_Load(object sender, EventArgs e)
         {
-            this.calc = new Calc(1000.00, 0.01, 12, 0.00);
+            this.calc = new Calc(1000.00, 0.00, 0.01, 12, 0.00);
             this.targetField = 3;
 
             this.targetService = 1;
