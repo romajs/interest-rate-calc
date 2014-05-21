@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using IRCalc.Src.Model;
 using IRCalc.Src.Service;
+using System.Globalization;
 
 namespace IRCalc
 {
@@ -20,42 +21,68 @@ namespace IRCalc
 
         private Calc calc;
         private CalcService service;
-        private int target;
-
-        private int reverseTarget(int value)
-        {
-            return 3 - value;
-        }
+        private int targetField;
+        private int targetService;
+        private List<CalcService> services;
 
         private void modelToView(Calc calc)
         {
-            txtInstallmentAmount.Text = Convert.ToString(calc.InstallmentAmount);
+            txtInstallmentAmount.Text = calc.InstallmentAmount.ToString("C2");
             txtInterestRate.Text = Convert.ToString(calc.InterestRate * 100);
             txtMonthQtd.Text = Convert.ToString(calc.MonthQtd);
-            txtTotalAmount.Text = Convert.ToString(calc.TotalAmount);
-            this.targetToRadio();
+            txtTotalAmount.Text = calc.TotalAmount.ToString("C2");
+            this.targetFieldToRadio();
+            this.targetServiceToRadio();
             this.updateDataGrid();
         }
 
-        private void targetToRadio()
+        private RadioButton getRadioButtonAt(Control control, int index)
         {
-            var checkedRadio = pnTargetRadios.Controls.OfType<RadioButton>().ElementAt(reverseTarget(this.target));
+            int count = control.Controls.OfType<RadioButton>().Count() - 1;
+            int reverseIndex = count - index;
+            return control.Controls.OfType<RadioButton>().ElementAt(reverseIndex);
+        }
+
+        private int getSelectedRadioButtonIndex(Control control)
+        {
+            var checkedRadio = control.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked);
+            int reverseIndex = control.Controls.IndexOf(checkedRadio);
+            int count = control.Controls.OfType<RadioButton>().Count() - 1;
+            int item = count - reverseIndex;
+            return item;
+        }
+
+        private void targetFieldToRadio()
+        {
+            var checkedRadio = this.getRadioButtonAt(this.pnTargetRadios, this.targetField);
+            checkedRadio.Checked = true;
+        }
+
+
+        private void targetServiceToRadio()
+        {
+            var checkedRadio = this.getRadioButtonAt(this.gpOptions, this.targetService);
             checkedRadio.Checked = true;
         }
 
         private void viewToModel(Calc calc)
         {
-            calc.InstallmentAmount = txtInstallmentAmount.Text != "" ? Double.Parse(txtInstallmentAmount.Text) : 0.00;
-            calc.InterestRate = txtInterestRate.Text != "" ? Double.Parse(txtInterestRate.Text) / 100 : 0.00;
+            calc.InstallmentAmount = txtInstallmentAmount.Text != "" ? Double.Parse(txtInstallmentAmount.Text, NumberStyles.Currency) : 0.00;
+            calc.InterestRate = txtInterestRate.Text != "" ? Double.Parse(txtInterestRate.Text, NumberStyles.Float) / 100 : 0.00;
             calc.MonthQtd = txtMonthQtd.Text != "" ? Int32.Parse(txtMonthQtd.Text) : 0;
-            calc.TotalAmount = txtTotalAmount.Text != "" ? Double.Parse(txtTotalAmount.Text) : 0.00;
-            this.radioToTarget();
+            calc.TotalAmount = txtTotalAmount.Text != "" ? Double.Parse(txtTotalAmount.Text, NumberStyles.Currency) : 0.00;
+            this.radioToTargetField();
+            this.radioToTargetService();
         }
 
-        private void radioToTarget()
+        private void radioToTargetField()
         {
-            var checkedRadio = pnTargetRadios.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked);
-            this.target = reverseTarget(pnTargetRadios.Controls.IndexOf(checkedRadio));
+            this.targetField = this.getSelectedRadioButtonIndex(this.pnTargetRadios);
+        }
+
+        private void radioToTargetService()
+        {
+            this.targetService = this.getSelectedRadioButtonIndex(this.gpOptions);
         }
 
         private void updateDataGrid()
@@ -81,7 +108,8 @@ namespace IRCalc
 
         private void calcTarget(Calc calc)
         {
-            switch (target)
+            this.service = this.services.ElementAt(this.targetService);
+            switch (targetField)
             {
                 case 0:
                     this.service.InstallmenAmount(calc);
@@ -100,12 +128,16 @@ namespace IRCalc
 
         private void Form_Load(object sender, EventArgs e)
         {
-            this.target = 3;
-            this.service = new CompoundCalcService();
             this.calc = new Calc(1000.00, 0.01, 12, 0.00);
+            this.targetField = 3;
 
-            this.modelToView(this.calc);
+            this.targetService = 1;
+            this.services = new List<CalcService>();
+            this.services.Add(new SimpleCalcService());
+            this.services.Add(new CompoundCalcService());
+
             this.calcTarget(this.calc);
+            this.modelToView(this.calc);
         }
 
         private void txtCalcField_Leave(object sender, EventArgs e)

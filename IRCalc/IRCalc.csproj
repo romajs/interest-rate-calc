@@ -72,6 +72,7 @@
     <Compile Include="Src\Model\Calc.cs" />
     <Compile Include="Src\Service\CalcService.cs" />
     <Compile Include="Src\Service\CompoundCalcService.cs" />
+    <Compile Include="Src\Service\SimpleCalcService.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

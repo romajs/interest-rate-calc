@@ -311,30 +311,30 @@
   <data name="&gt;&gt;lblTotalAmount.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <metadata name="month.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="month.UserAddedColumn" type="System.Boolean, mscorlib">
     <value>True</value>
-  </metadata>
+  </data>
   <data name="month.HeaderText" xml:space="preserve">
     <value>Month</value>
   </data>
   <data name="month.Width" type="System.Int32, mscorlib">
     <value>68</value>
   </data>
-  <metadata name="installmentAmount.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="installmentAmount.UserAddedColumn" type="System.Boolean, mscorlib">
     <value>True</value>
-  </metadata>
+  </data>
   <data name="installmentAmount.HeaderText" xml:space="preserve">
     <value>Installment Amount</value>
   </data>
-  <metadata name="totalAmount.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="totalAmount.UserAddedColumn" type="System.Boolean, mscorlib">
     <value>True</value>
-  </metadata>
+  </data>
   <data name="totalAmount.HeaderText" xml:space="preserve">
     <value>Total Amount</value>
   </data>
-  <metadata name="riseAmount.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="riseAmount.UserAddedColumn" type="System.Boolean, mscorlib">
     <value>True</value>
-  </metadata>
+  </data>
   <data name="riseAmount.HeaderText" xml:space="preserve">
     <value>Rise Amount</value>
   </data>
@@ -379,7 +379,7 @@
     <value>1</value>
   </data>
   <data name="rdCompoundOption.Text" xml:space="preserve">
-    <value>rdCompoundOption</value>
+    <value>Compount Interest Rate</value>
   </data>
   <data name="&gt;&gt;rdCompoundOption.Name" xml:space="preserve">
     <value>rdCompoundOption</value>
@@ -406,7 +406,7 @@
     <value>0</value>
   </data>
   <data name="rdSimpleOption.Text" xml:space="preserve">
-    <value>rdSimpleOption</value>
+    <value>Simple Interest Rate</value>
   </data>
   <data name="&gt;&gt;rdSimpleOption.Name" xml:space="preserve">
     <value>rdSimpleOption</value>
@@ -419,9 +419,6 @@
   </data>
   <data name="&gt;&gt;rdSimpleOption.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="gpOptions.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
   </data>
   <data name="gpOptions.Location" type="System.Drawing.Point, System.Drawing">
     <value>263, 6</value>
@@ -597,9 +594,9 @@
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="$this.Localizable" type="System.Boolean, mscorlib">
     <value>True</value>
-  </metadata>
+  </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>

@@ -42,19 +42,19 @@
             this.txtTotalAmount = new System.Windows.Forms.TextBox();
             this.lblTotalAmount = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.month = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.installmentAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.totalAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.riseAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gpOptions = new System.Windows.Forms.GroupBox();
+            this.rdCompoundOption = new System.Windows.Forms.RadioButton();
+            this.rdSimpleOption = new System.Windows.Forms.RadioButton();
             this.rdInterestRate = new System.Windows.Forms.RadioButton();
             this.pnTargetRadios = new System.Windows.Forms.Panel();
             this.rdTotalAmount = new System.Windows.Forms.RadioButton();
             this.rdMonthQtd = new System.Windows.Forms.RadioButton();
             this.rdInstallmentAmount = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.rdSimpleOption = new System.Windows.Forms.RadioButton();
-            this.rdCompoundOption = new System.Windows.Forms.RadioButton();
-            this.month = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.installmentAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.totalAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.riseAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.gpOptions.SuspendLayout();
             this.pnTargetRadios.SuspendLayout();
@@ -116,6 +116,45 @@
             resources.ApplyResources(this.dataGridView1, "dataGridView1");
             this.dataGridView1.Name = "dataGridView1";
             // 
+            // month
+            // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.NullValue = null;
+            this.month.DefaultCellStyle = dataGridViewCellStyle1;
+            resources.ApplyResources(this.month, "month");
+            this.month.Name = "month";
+            this.month.ReadOnly = true;
+            // 
+            // installmentAmount
+            // 
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.Format = "C2";
+            dataGridViewCellStyle2.NullValue = null;
+            this.installmentAmount.DefaultCellStyle = dataGridViewCellStyle2;
+            resources.ApplyResources(this.installmentAmount, "installmentAmount");
+            this.installmentAmount.Name = "installmentAmount";
+            this.installmentAmount.ReadOnly = true;
+            // 
+            // totalAmount
+            // 
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.Format = "C2";
+            dataGridViewCellStyle3.NullValue = null;
+            this.totalAmount.DefaultCellStyle = dataGridViewCellStyle3;
+            resources.ApplyResources(this.totalAmount, "totalAmount");
+            this.totalAmount.Name = "totalAmount";
+            this.totalAmount.ReadOnly = true;
+            // 
+            // riseAmount
+            // 
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.Format = "C2";
+            dataGridViewCellStyle4.NullValue = null;
+            this.riseAmount.DefaultCellStyle = dataGridViewCellStyle4;
+            resources.ApplyResources(this.riseAmount, "riseAmount");
+            this.riseAmount.Name = "riseAmount";
+            this.riseAmount.ReadOnly = true;
+            // 
             // gpOptions
             // 
             resources.ApplyResources(this.gpOptions, "gpOptions");
@@ -123,6 +162,20 @@
             this.gpOptions.Controls.Add(this.rdSimpleOption);
             this.gpOptions.Name = "gpOptions";
             this.gpOptions.TabStop = false;
+            // 
+            // rdCompoundOption
+            // 
+            resources.ApplyResources(this.rdCompoundOption, "rdCompoundOption");
+            this.rdCompoundOption.Name = "rdCompoundOption";
+            this.rdCompoundOption.TabStop = true;
+            this.rdCompoundOption.UseVisualStyleBackColor = true;
+            // 
+            // rdSimpleOption
+            // 
+            resources.ApplyResources(this.rdSimpleOption, "rdSimpleOption");
+            this.rdSimpleOption.Name = "rdSimpleOption";
+            this.rdSimpleOption.TabStop = true;
+            this.rdSimpleOption.UseVisualStyleBackColor = true;
             // 
             // rdInterestRate
             // 
@@ -174,59 +227,6 @@
             this.panel1.Controls.Add(this.txtMonthQtd);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
-            // 
-            // rdSimpleOption
-            // 
-            resources.ApplyResources(this.rdSimpleOption, "rdSimpleOption");
-            this.rdSimpleOption.Name = "rdSimpleOption";
-            this.rdSimpleOption.TabStop = true;
-            this.rdSimpleOption.UseVisualStyleBackColor = true;
-            // 
-            // rdCompoundOption
-            // 
-            resources.ApplyResources(this.rdCompoundOption, "rdCompoundOption");
-            this.rdCompoundOption.Name = "rdCompoundOption";
-            this.rdCompoundOption.TabStop = true;
-            this.rdCompoundOption.UseVisualStyleBackColor = true;
-            // 
-            // month
-            // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.NullValue = null;
-            this.month.DefaultCellStyle = dataGridViewCellStyle1;
-            resources.ApplyResources(this.month, "month");
-            this.month.Name = "month";
-            this.month.ReadOnly = true;
-            // 
-            // installmentAmount
-            // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.Format = "C2";
-            dataGridViewCellStyle2.NullValue = null;
-            this.installmentAmount.DefaultCellStyle = dataGridViewCellStyle2;
-            resources.ApplyResources(this.installmentAmount, "installmentAmount");
-            this.installmentAmount.Name = "installmentAmount";
-            this.installmentAmount.ReadOnly = true;
-            // 
-            // totalAmount
-            // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.Format = "C2";
-            dataGridViewCellStyle3.NullValue = null;
-            this.totalAmount.DefaultCellStyle = dataGridViewCellStyle3;
-            resources.ApplyResources(this.totalAmount, "totalAmount");
-            this.totalAmount.Name = "totalAmount";
-            this.totalAmount.ReadOnly = true;
-            // 
-            // riseAmount
-            // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.Format = "C2";
-            dataGridViewCellStyle4.NullValue = null;
-            this.riseAmount.DefaultCellStyle = dataGridViewCellStyle4;
-            resources.ApplyResources(this.riseAmount, "riseAmount");
-            this.riseAmount.Name = "riseAmount";
-            this.riseAmount.ReadOnly = true;
             // 
             // IRCalcForm
             // 
