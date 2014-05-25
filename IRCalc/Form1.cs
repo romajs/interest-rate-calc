@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using IRCalc.Src.Model;
 using IRCalc.Src.Service;
 using System.Globalization;
+using System.Threading;
 
 namespace IRCalc
 {
@@ -142,6 +143,15 @@ namespace IRCalc
             this.modelToView(this.calc);
         }
 
+        private void ChangeLanguage(string lang)
+        {
+            foreach (Control c in this.Controls)
+            {
+                ComponentResourceManager resources = new ComponentResourceManager(typeof(IRCalcForm));
+                resources.ApplyResources(c, c.Name, new CultureInfo(lang));
+            }
+        }
+
         private void txtCalcField_Leave(object sender, EventArgs e)
         {
             this.prepareAndCalc();
@@ -152,5 +162,20 @@ namespace IRCalc
             this.prepareAndCalc();
         }
 
+        private void optionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.ChangeLanguage("pt-BR");
+        }
+
+
+        private void customizeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.ChangeLanguage("en-US");
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

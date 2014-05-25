@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IRCalcForm));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblInitialAmount = new System.Windows.Forms.Label();
             this.txtInitialAmount = new System.Windows.Forms.TextBox();
             this.txtInterestRate = new System.Windows.Forms.TextBox();
@@ -51,17 +51,26 @@
             this.rdSimpleOption = new System.Windows.Forms.RadioButton();
             this.rdInterestRate = new System.Windows.Forms.RadioButton();
             this.pnTargetRadios = new System.Windows.Forms.Panel();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.rdTotalAmount = new System.Windows.Forms.RadioButton();
             this.rdMonthQtd = new System.Windows.Forms.RadioButton();
             this.rdInstallmentAmount = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblInstallmentAmount = new System.Windows.Forms.Label();
             this.txtInstallmentAmount = new System.Windows.Forms.TextBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.lblInstallmentAmount = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.customizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.gpOptions.SuspendLayout();
             this.pnTargetRadios.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblInitialAmount
@@ -121,39 +130,39 @@
             // 
             // month
             // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.NullValue = null;
-            this.month.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle33.NullValue = null;
+            this.month.DefaultCellStyle = dataGridViewCellStyle33;
             resources.ApplyResources(this.month, "month");
             this.month.Name = "month";
             this.month.ReadOnly = true;
             // 
             // installmentAmount
             // 
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.Format = "C2";
-            dataGridViewCellStyle6.NullValue = null;
-            this.installmentAmount.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle34.Format = "C2";
+            dataGridViewCellStyle34.NullValue = null;
+            this.installmentAmount.DefaultCellStyle = dataGridViewCellStyle34;
             resources.ApplyResources(this.installmentAmount, "installmentAmount");
             this.installmentAmount.Name = "installmentAmount";
             this.installmentAmount.ReadOnly = true;
             // 
             // totalAmount
             // 
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.Format = "C2";
-            dataGridViewCellStyle7.NullValue = null;
-            this.totalAmount.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle35.Format = "C2";
+            dataGridViewCellStyle35.NullValue = null;
+            this.totalAmount.DefaultCellStyle = dataGridViewCellStyle35;
             resources.ApplyResources(this.totalAmount, "totalAmount");
             this.totalAmount.Name = "totalAmount";
             this.totalAmount.ReadOnly = true;
             // 
             // riseAmount
             // 
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.Format = "C2";
-            dataGridViewCellStyle8.NullValue = null;
-            this.riseAmount.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle36.Format = "C2";
+            dataGridViewCellStyle36.NullValue = null;
+            this.riseAmount.DefaultCellStyle = dataGridViewCellStyle36;
             resources.ApplyResources(this.riseAmount, "riseAmount");
             this.riseAmount.Name = "riseAmount";
             this.riseAmount.ReadOnly = true;
@@ -199,6 +208,13 @@
             this.pnTargetRadios.Controls.Add(this.rdInstallmentAmount);
             this.pnTargetRadios.Name = "pnTargetRadios";
             // 
+            // radioButton1
+            // 
+            resources.ApplyResources(this.radioButton1, "radioButton1");
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.TabStop = true;
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
             // rdTotalAmount
             // 
             resources.ApplyResources(this.rdTotalAmount, "rdTotalAmount");
@@ -236,22 +252,69 @@
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
-            // lblInstallmentAmount
-            // 
-            resources.ApplyResources(this.lblInstallmentAmount, "lblInstallmentAmount");
-            this.lblInstallmentAmount.Name = "lblInstallmentAmount";
-            // 
             // txtInstallmentAmount
             // 
             resources.ApplyResources(this.txtInstallmentAmount, "txtInstallmentAmount");
             this.txtInstallmentAmount.Name = "txtInstallmentAmount";
             // 
-            // radioButton1
+            // lblInstallmentAmount
             // 
-            resources.ApplyResources(this.radioButton1, "radioButton1");
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.TabStop = true;
-            this.radioButton1.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.lblInstallmentAmount, "lblInstallmentAmount");
+            this.lblInstallmentAmount.Name = "lblInstallmentAmount";
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.toolsToolStripMenuItem,
+            this.helpToolStripMenuItem});
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
+            this.menuStrip1.Name = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exitToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            resources.ApplyResources(this.fileToolStripMenuItem, "fileToolStripMenuItem");
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            resources.ApplyResources(this.exitToolStripMenuItem, "exitToolStripMenuItem");
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // toolsToolStripMenuItem
+            // 
+            this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.customizeToolStripMenuItem,
+            this.optionsToolStripMenuItem});
+            resources.ApplyResources(this.toolsToolStripMenuItem, "toolsToolStripMenuItem");
+            this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
+            // 
+            // customizeToolStripMenuItem
+            // 
+            this.customizeToolStripMenuItem.Name = "customizeToolStripMenuItem";
+            resources.ApplyResources(this.customizeToolStripMenuItem, "customizeToolStripMenuItem");
+            this.customizeToolStripMenuItem.Click += new System.EventHandler(this.customizeToolStripMenuItem_Click);
+            // 
+            // optionsToolStripMenuItem
+            // 
+            this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
+            resources.ApplyResources(this.optionsToolStripMenuItem, "optionsToolStripMenuItem");
+            this.optionsToolStripMenuItem.Click += new System.EventHandler(this.optionsToolStripMenuItem_Click);
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutToolStripMenuItem});
+            resources.ApplyResources(this.helpToolStripMenuItem, "helpToolStripMenuItem");
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
             // 
             // IRCalcForm
             // 
@@ -260,6 +323,10 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.gpOptions);
             this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
             this.Name = "IRCalcForm";
             this.Load += new System.EventHandler(this.Form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -269,7 +336,10 @@
             this.pnTargetRadios.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -293,13 +363,21 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.RadioButton rdCompoundOption;
         private System.Windows.Forms.RadioButton rdSimpleOption;
+        private System.Windows.Forms.TextBox txtInstallmentAmount;
+        private System.Windows.Forms.Label lblInstallmentAmount;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem customizeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.DataGridViewTextBoxColumn month;
         private System.Windows.Forms.DataGridViewTextBoxColumn installmentAmount;
         private System.Windows.Forms.DataGridViewTextBoxColumn totalAmount;
         private System.Windows.Forms.DataGridViewTextBoxColumn riseAmount;
-        private System.Windows.Forms.TextBox txtInstallmentAmount;
-        private System.Windows.Forms.Label lblInstallmentAmount;
-        private System.Windows.Forms.RadioButton radioButton1;
 
     }
 }
