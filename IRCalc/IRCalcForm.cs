@@ -131,7 +131,7 @@ namespace IRCalc
 
         private void Form_Load(object sender, EventArgs e)
         {
-            this.calc = new Calc(1000.00, 0.00, 0.01, 12, 0.00);
+            this.calc = new Calc(1000.00, 0.00, 0.0265, 12, 0.00);
             this.targetField = 3;
 
             this.targetService = 1;
