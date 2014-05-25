@@ -1,6 +1,8 @@
-interest-rate-calc
+IRCalc [C#2010] 
 ==================
+This project is developed with Microsoft Visual Studio 2010 and is available for *non-comercial* use.
 
+##License
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
