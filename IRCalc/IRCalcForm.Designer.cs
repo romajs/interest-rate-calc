@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IRCalcForm));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IRCalcForm));
             this.lblInitialAmount = new System.Windows.Forms.Label();
             this.txtInitialAmount = new System.Windows.Forms.TextBox();
             this.txtInterestRate = new System.Windows.Forms.TextBox();
@@ -75,47 +75,71 @@
             // 
             // lblInitialAmount
             // 
-            resources.ApplyResources(this.lblInitialAmount, "lblInitialAmount");
+            this.lblInitialAmount.AutoSize = true;
+            this.lblInitialAmount.Location = new System.Drawing.Point(12, 14);
             this.lblInitialAmount.Name = "lblInitialAmount";
+            this.lblInitialAmount.Size = new System.Drawing.Size(70, 13);
+            this.lblInitialAmount.TabIndex = 0;
+            this.lblInitialAmount.Text = "Initial Amount";
             // 
             // txtInitialAmount
             // 
-            resources.ApplyResources(this.txtInitialAmount, "txtInitialAmount");
+            this.txtInitialAmount.Location = new System.Drawing.Point(109, 11);
             this.txtInitialAmount.Name = "txtInitialAmount";
+            this.txtInitialAmount.Size = new System.Drawing.Size(100, 20);
+            this.txtInitialAmount.TabIndex = 1;
             this.txtInitialAmount.Leave += new System.EventHandler(this.txtCalcField_Leave);
             // 
             // txtInterestRate
             // 
-            resources.ApplyResources(this.txtInterestRate, "txtInterestRate");
+            this.txtInterestRate.Location = new System.Drawing.Point(109, 63);
             this.txtInterestRate.Name = "txtInterestRate";
+            this.txtInterestRate.Size = new System.Drawing.Size(100, 20);
+            this.txtInterestRate.TabIndex = 3;
             this.txtInterestRate.Leave += new System.EventHandler(this.txtCalcField_Leave);
             // 
             // lblInterestRate
             // 
-            resources.ApplyResources(this.lblInterestRate, "lblInterestRate");
+            this.lblInterestRate.AutoSize = true;
+            this.lblInterestRate.Location = new System.Drawing.Point(12, 66);
             this.lblInterestRate.Name = "lblInterestRate";
+            this.lblInterestRate.Size = new System.Drawing.Size(68, 13);
+            this.lblInterestRate.TabIndex = 3;
+            this.lblInterestRate.Text = "Interest Rate";
             // 
             // lblMonthQtd
             // 
-            resources.ApplyResources(this.lblMonthQtd, "lblMonthQtd");
+            this.lblMonthQtd.AutoSize = true;
+            this.lblMonthQtd.Location = new System.Drawing.Point(12, 40);
             this.lblMonthQtd.Name = "lblMonthQtd";
+            this.lblMonthQtd.Size = new System.Drawing.Size(57, 13);
+            this.lblMonthQtd.TabIndex = 4;
+            this.lblMonthQtd.Text = "Month Qtd";
             // 
             // txtMonthQtd
             // 
-            resources.ApplyResources(this.txtMonthQtd, "txtMonthQtd");
+            this.txtMonthQtd.Location = new System.Drawing.Point(109, 37);
             this.txtMonthQtd.Name = "txtMonthQtd";
+            this.txtMonthQtd.Size = new System.Drawing.Size(100, 20);
+            this.txtMonthQtd.TabIndex = 2;
             this.txtMonthQtd.Leave += new System.EventHandler(this.txtCalcField_Leave);
             // 
             // txtTotalAmount
             // 
-            resources.ApplyResources(this.txtTotalAmount, "txtTotalAmount");
+            this.txtTotalAmount.Location = new System.Drawing.Point(109, 92);
             this.txtTotalAmount.Name = "txtTotalAmount";
+            this.txtTotalAmount.Size = new System.Drawing.Size(100, 20);
+            this.txtTotalAmount.TabIndex = 4;
             this.txtTotalAmount.Leave += new System.EventHandler(this.txtCalcField_Leave);
             // 
             // lblTotalAmount
             // 
-            resources.ApplyResources(this.lblTotalAmount, "lblTotalAmount");
+            this.lblTotalAmount.AutoSize = true;
+            this.lblTotalAmount.Location = new System.Drawing.Point(12, 95);
             this.lblTotalAmount.Name = "lblTotalAmount";
+            this.lblTotalAmount.Size = new System.Drawing.Size(70, 13);
+            this.lblTotalAmount.TabIndex = 7;
+            this.lblTotalAmount.Text = "Total Amount";
             // 
             // dataGridView1
             // 
@@ -125,17 +149,20 @@
             this.installmentAmount,
             this.totalAmount,
             this.riseAmount});
-            resources.ApplyResources(this.dataGridView1, "dataGridView1");
+            this.dataGridView1.Location = new System.Drawing.Point(12, 199);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(428, 286);
+            this.dataGridView1.TabIndex = 14;
             // 
             // month
             // 
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.NullValue = null;
             this.month.DefaultCellStyle = dataGridViewCellStyle1;
-            resources.ApplyResources(this.month, "month");
+            this.month.HeaderText = "Month";
             this.month.Name = "month";
             this.month.ReadOnly = true;
+            this.month.Width = 68;
             // 
             // installmentAmount
             // 
@@ -143,7 +170,7 @@
             dataGridViewCellStyle2.Format = "C2";
             dataGridViewCellStyle2.NullValue = null;
             this.installmentAmount.DefaultCellStyle = dataGridViewCellStyle2;
-            resources.ApplyResources(this.installmentAmount, "installmentAmount");
+            this.installmentAmount.HeaderText = "Installment Amount";
             this.installmentAmount.Name = "installmentAmount";
             this.installmentAmount.ReadOnly = true;
             // 
@@ -153,7 +180,7 @@
             dataGridViewCellStyle3.Format = "C2";
             dataGridViewCellStyle3.NullValue = null;
             this.totalAmount.DefaultCellStyle = dataGridViewCellStyle3;
-            resources.ApplyResources(this.totalAmount, "totalAmount");
+            this.totalAmount.HeaderText = "Total Amount";
             this.totalAmount.Name = "totalAmount";
             this.totalAmount.ReadOnly = true;
             // 
@@ -163,76 +190,121 @@
             dataGridViewCellStyle4.Format = "C2";
             dataGridViewCellStyle4.NullValue = null;
             this.riseAmount.DefaultCellStyle = dataGridViewCellStyle4;
-            resources.ApplyResources(this.riseAmount, "riseAmount");
+            this.riseAmount.HeaderText = "Rise Amount";
             this.riseAmount.Name = "riseAmount";
             this.riseAmount.ReadOnly = true;
             // 
             // gpOptions
             // 
-            resources.ApplyResources(this.gpOptions, "gpOptions");
+            this.gpOptions.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.gpOptions.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.gpOptions.Controls.Add(this.rdCompoundOption);
             this.gpOptions.Controls.Add(this.rdSimpleOption);
+            this.gpOptions.Location = new System.Drawing.Point(263, 30);
             this.gpOptions.Name = "gpOptions";
+            this.gpOptions.Size = new System.Drawing.Size(172, 154);
+            this.gpOptions.TabIndex = 11;
             this.gpOptions.TabStop = false;
             // 
             // rdCompoundOption
             // 
-            resources.ApplyResources(this.rdCompoundOption, "rdCompoundOption");
+            this.rdCompoundOption.AutoSize = true;
+            this.rdCompoundOption.Location = new System.Drawing.Point(27, 74);
             this.rdCompoundOption.Name = "rdCompoundOption";
+            this.rdCompoundOption.Size = new System.Drawing.Size(140, 17);
+            this.rdCompoundOption.TabIndex = 13;
             this.rdCompoundOption.TabStop = true;
+            this.rdCompoundOption.Text = "Compound Interest Rate";
+            this.rdCompoundOption.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.rdCompoundOption.UseVisualStyleBackColor = true;
             this.rdCompoundOption.Click += new System.EventHandler(this.rdTargetService_Click);
             // 
             // rdSimpleOption
             // 
-            resources.ApplyResources(this.rdSimpleOption, "rdSimpleOption");
+            this.rdSimpleOption.AutoSize = true;
+            this.rdSimpleOption.Location = new System.Drawing.Point(27, 47);
             this.rdSimpleOption.Name = "rdSimpleOption";
+            this.rdSimpleOption.Size = new System.Drawing.Size(123, 17);
+            this.rdSimpleOption.TabIndex = 12;
             this.rdSimpleOption.TabStop = true;
+            this.rdSimpleOption.Text = "Simple  Interest Rate";
+            this.rdSimpleOption.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.rdSimpleOption.UseVisualStyleBackColor = true;
             this.rdSimpleOption.Click += new System.EventHandler(this.rdTargetService_Click);
             // 
             // rdInterestRate
             // 
-            resources.ApplyResources(this.rdInterestRate, "rdInterestRate");
+            this.rdInterestRate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.rdInterestRate.AutoSize = true;
+            this.rdInterestRate.Location = new System.Drawing.Point(3, 30);
             this.rdInterestRate.Name = "rdInterestRate";
+            this.rdInterestRate.Size = new System.Drawing.Size(14, 13);
+            this.rdInterestRate.TabIndex = 7;
             this.rdInterestRate.TabStop = true;
             this.rdInterestRate.UseVisualStyleBackColor = true;
             // 
             // pnTargetRadios
             // 
-            resources.ApplyResources(this.pnTargetRadios, "pnTargetRadios");
+            this.pnTargetRadios.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.pnTargetRadios.Controls.Add(this.radioButton1);
             this.pnTargetRadios.Controls.Add(this.rdTotalAmount);
             this.pnTargetRadios.Controls.Add(this.rdMonthQtd);
             this.pnTargetRadios.Controls.Add(this.rdInterestRate);
             this.pnTargetRadios.Controls.Add(this.rdInstallmentAmount);
+            this.pnTargetRadios.Location = new System.Drawing.Point(215, 11);
             this.pnTargetRadios.Name = "pnTargetRadios";
+            this.pnTargetRadios.Size = new System.Drawing.Size(18, 127);
+            this.pnTargetRadios.TabIndex = 6;
             // 
             // radioButton1
             // 
-            resources.ApplyResources(this.radioButton1, "radioButton1");
+            this.radioButton1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.radioButton1.Location = new System.Drawing.Point(3, 110);
             this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(14, 13);
+            this.radioButton1.TabIndex = 10;
             this.radioButton1.TabStop = true;
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // rdTotalAmount
             // 
-            resources.ApplyResources(this.rdTotalAmount, "rdTotalAmount");
+            this.rdTotalAmount.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.rdTotalAmount.AutoSize = true;
+            this.rdTotalAmount.Location = new System.Drawing.Point(3, 85);
             this.rdTotalAmount.Name = "rdTotalAmount";
+            this.rdTotalAmount.Size = new System.Drawing.Size(14, 13);
+            this.rdTotalAmount.TabIndex = 9;
             this.rdTotalAmount.TabStop = true;
             this.rdTotalAmount.UseVisualStyleBackColor = true;
             // 
             // rdMonthQtd
             // 
-            resources.ApplyResources(this.rdMonthQtd, "rdMonthQtd");
+            this.rdMonthQtd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.rdMonthQtd.AutoSize = true;
+            this.rdMonthQtd.Location = new System.Drawing.Point(3, 57);
             this.rdMonthQtd.Name = "rdMonthQtd";
+            this.rdMonthQtd.Size = new System.Drawing.Size(14, 13);
+            this.rdMonthQtd.TabIndex = 8;
             this.rdMonthQtd.TabStop = true;
             this.rdMonthQtd.UseVisualStyleBackColor = true;
             // 
             // rdInstallmentAmount
             // 
-            resources.ApplyResources(this.rdInstallmentAmount, "rdInstallmentAmount");
+            this.rdInstallmentAmount.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.rdInstallmentAmount.AutoSize = true;
+            this.rdInstallmentAmount.Location = new System.Drawing.Point(3, 3);
             this.rdInstallmentAmount.Name = "rdInstallmentAmount";
+            this.rdInstallmentAmount.Size = new System.Drawing.Size(14, 13);
+            this.rdInstallmentAmount.TabIndex = 6;
             this.rdInstallmentAmount.TabStop = true;
             this.rdInstallmentAmount.UseVisualStyleBackColor = true;
             // 
@@ -249,18 +321,27 @@
             this.panel1.Controls.Add(this.lblMonthQtd);
             this.panel1.Controls.Add(this.txtTotalAmount);
             this.panel1.Controls.Add(this.txtMonthQtd);
-            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Location = new System.Drawing.Point(12, 36);
             this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(245, 148);
+            this.panel1.TabIndex = 0;
             // 
             // txtInstallmentAmount
             // 
-            resources.ApplyResources(this.txtInstallmentAmount, "txtInstallmentAmount");
+            this.txtInstallmentAmount.Location = new System.Drawing.Point(109, 118);
             this.txtInstallmentAmount.Name = "txtInstallmentAmount";
+            this.txtInstallmentAmount.Size = new System.Drawing.Size(100, 20);
+            this.txtInstallmentAmount.TabIndex = 5;
             // 
             // lblInstallmentAmount
             // 
-            resources.ApplyResources(this.lblInstallmentAmount, "lblInstallmentAmount");
+            this.lblInstallmentAmount.AutoSize = true;
+            this.lblInstallmentAmount.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblInstallmentAmount.Location = new System.Drawing.Point(12, 121);
             this.lblInstallmentAmount.Name = "lblInstallmentAmount";
+            this.lblInstallmentAmount.Size = new System.Drawing.Size(96, 13);
+            this.lblInstallmentAmount.TabIndex = 12;
+            this.lblInstallmentAmount.Text = "Installment Amount";
             // 
             // menuStrip1
             // 
@@ -268,20 +349,25 @@
             this.fileToolStripMenuItem,
             this.toolsToolStripMenuItem,
             this.helpToolStripMenuItem});
-            resources.ApplyResources(this.menuStrip1, "menuStrip1");
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(451, 24);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
             // 
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            resources.ApplyResources(this.fileToolStripMenuItem, "fileToolStripMenuItem");
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "&File";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            resources.ApplyResources(this.exitToolStripMenuItem, "exitToolStripMenuItem");
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
+            this.exitToolStripMenuItem.Text = "E&xit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // toolsToolStripMenuItem
@@ -289,45 +375,56 @@
             this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.customizeToolStripMenuItem,
             this.optionsToolStripMenuItem});
-            resources.ApplyResources(this.toolsToolStripMenuItem, "toolsToolStripMenuItem");
+            this.toolsToolStripMenuItem.Enabled = false;
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.toolsToolStripMenuItem.Text = "&Language";
             // 
             // customizeToolStripMenuItem
             // 
             this.customizeToolStripMenuItem.Name = "customizeToolStripMenuItem";
-            resources.ApplyResources(this.customizeToolStripMenuItem, "customizeToolStripMenuItem");
+            this.customizeToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.customizeToolStripMenuItem.Text = "&English";
             this.customizeToolStripMenuItem.Click += new System.EventHandler(this.customizeToolStripMenuItem_Click);
             // 
             // optionsToolStripMenuItem
             // 
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            resources.ApplyResources(this.optionsToolStripMenuItem, "optionsToolStripMenuItem");
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.optionsToolStripMenuItem.Text = "&Portuguese";
             this.optionsToolStripMenuItem.Click += new System.EventHandler(this.optionsToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutToolStripMenuItem});
-            resources.ApplyResources(this.helpToolStripMenuItem, "helpToolStripMenuItem");
+            this.helpToolStripMenuItem.Enabled = false;
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "&Help";
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
+            this.aboutToolStripMenuItem.Text = "&About...";
             // 
             // IRCalcForm
             // 
-            resources.ApplyResources(this, "$this");
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(451, 497);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.gpOptions);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "IRCalcForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "IRCalc";
             this.Load += new System.EventHandler(this.Form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.gpOptions.ResumeLayout(false);

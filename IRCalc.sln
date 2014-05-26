@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IRCalc", "IRCalc\IRCalc.csproj", "{1C11AB07-0A26-4D31-8B58-BBE363CC8DBB}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "IRCalcSetup", "IRCalcSetup\IRCalcSetup.vdproj", "{CBED1383-66D8-486A-990D-E69EC3F4AB16}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "IRCalcSetup\IRCalcSetup.vdproj", "{CBED1383-66D8-486A-990D-E69EC3F4AB16}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -16,7 +16,6 @@ Global
 		{1C11AB07-0A26-4D31-8B58-BBE363CC8DBB}.Release|x86.ActiveCfg = Release|x86
 		{1C11AB07-0A26-4D31-8B58-BBE363CC8DBB}.Release|x86.Build.0 = Release|x86
 		{CBED1383-66D8-486A-990D-E69EC3F4AB16}.Debug|x86.ActiveCfg = Debug
-		{CBED1383-66D8-486A-990D-E69EC3F4AB16}.Debug|x86.Build.0 = Debug
 		{CBED1383-66D8-486A-990D-E69EC3F4AB16}.Release|x86.ActiveCfg = Release
 		{CBED1383-66D8-486A-990D-E69EC3F4AB16}.Release|x86.Build.0 = Release
 	EndGlobalSection
