@@ -118,6 +118,106 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lblInitialAmount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 13</value>
+  </data>
+  <data name="lblInitialAmount.Text" xml:space="preserve">
+    <value>Valor Inicial</value>
+  </data>
+  <data name="lblInterestRate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 13</value>
+  </data>
+  <data name="lblInterestRate.Text" xml:space="preserve">
+    <value>Taxa de Juros</value>
+  </data>
+  <data name="lblMonthQtd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 13</value>
+  </data>
+  <data name="lblMonthQtd.Text" xml:space="preserve">
+    <value>Mêses</value>
+  </data>
+  <data name="lblTotalAmount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 13</value>
+  </data>
+  <data name="lblTotalAmount.Text" xml:space="preserve">
+    <value>Valor Total</value>
+  </data>
+  <data name="rdCompoundOption.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="rdCompoundOption.Text" xml:space="preserve">
+    <value>Juros Composto</value>
+  </data>
+  <data name="rdSimpleOption.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 17</value>
+  </data>
+  <data name="rdSimpleOption.Text" xml:space="preserve">
+    <value>Juros Simples</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="radioButton1.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="lblInstallmentAmount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 13</value>
+  </data>
+  <data name="lblInstallmentAmount.Text" xml:space="preserve">
+    <value>Valor da Parcela</value>
+  </data>
+  <data name="fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 20</value>
+  </data>
+  <data name="fileToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Arquivo</value>
+  </data>
+  <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 22</value>
+  </data>
+  <data name="exitToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Sair</value>
+  </data>
+  <data name="toolsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 20</value>
+  </data>
+  <data name="toolsToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Linguagem</value>
+  </data>
+  <data name="customizeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 22</value>
+  </data>
+  <data name="customizeToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Inglês</value>
+  </data>
+  <data name="optionsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 22</value>
+  </data>
+  <data name="optionsToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Português (Brasil)</value>
+  </data>
+  <data name="helpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 20</value>
+  </data>
+  <data name="helpToolStripMenuItem.Text" xml:space="preserve">
+    <value>A&amp;juda</value>
+  </data>
+  <data name="aboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 22</value>
+  </data>
+  <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Sobre</value>
+  </data>
+  <data name="month.HeaderText" xml:space="preserve">
+    <value>Mês</value>
+  </data>
+  <data name="installmentAmount.HeaderText" xml:space="preserve">
+    <value>Valor da Parcela</value>
+  </data>
+  <data name="totalAmount.HeaderText" xml:space="preserve">
+    <value>Valor Total</value>
+  </data>
+  <data name="riseAmount.HeaderText" xml:space="preserve">
+    <value>Valor de Aumento</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAIAICAAAAEAIACoEAAAJgAAABAQAAABACAAaAQAAM4QAAAoAAAAIAAAAEAAAAABACAAAAAAAAAQ
@@ -212,5 +312,8 @@
         UQBMrFcAJZEvAgyAFkkJfhNVI5AtHEysVwCDgQAAgwAAAIEAAADAAAAA4AAAAPAAAADgAAAAgAAAAAAB
         AAAADwAAAAcAAAADAAAAAQAAAEAAAIDgAADh4QAA
 </value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Calculadora Juros</value>
   </data>
 </root>

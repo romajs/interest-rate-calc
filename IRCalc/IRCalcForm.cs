@@ -166,7 +166,8 @@ namespace IRCalc
         {
             this.ChangeLanguage("pt-BR");
         }
-        
+
+
         private void customizeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.ChangeLanguage("en-US");
