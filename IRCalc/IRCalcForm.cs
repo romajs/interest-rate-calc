@@ -152,7 +152,7 @@ namespace IRCalc
             }
         }
 
-        private void txtCalcField_Leave(object sender, EventArgs e)
+        private void btnCalculate_Click(object sender, EventArgs e)
         {
             this.prepareAndCalc();
         }
@@ -166,8 +166,7 @@ namespace IRCalc
         {
             this.ChangeLanguage("pt-BR");
         }
-
-
+        
         private void customizeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.ChangeLanguage("en-US");
