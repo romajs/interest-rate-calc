@@ -4,17 +4,17 @@ IRCalc is a sample and functional application written in C# with Visual Studio 2
 
 *This project is developed with Microsoft Visual Studio 2010 and is available for *non-comercial* use.*
 
-##Operational Systems
-- Windows 7 (tested only)
-
-##Languages
-- En-Us
-- Pt-Br
-
 ##Download
 This project is available for downloading at sourceforge [https://sourceforge.net/projects/ircalc/](https://sourceforge.net/projects/ircalc/ "Link for download")
 
-##Application
+##Supported OS
+- Windows 7 (tested only)
+
+##Supported Languages
+- En-Us
+- Pt-Br
+
+##Screenshot
 ![a](https://a.fsdn.com/con/app/proj/ircalc/screenshots/ircalc_main_screen.png "IRCalc")
 
 ##License
