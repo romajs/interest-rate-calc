@@ -1,11 +1,21 @@
 IRCalc [C#2010] 
 ==================
-This project is developed with Microsoft Visual Studio 2010 and is available for *non-comercial* use.
+IRCalc is a sample and functional application written in C# with Visual Studio 2010 and is designed to calculate interest rate, initial amount, final amount, installment amount or even installment quantity. Offering a basic and intuitive layout, user can input values, choose target field for calculation, and choose between "Simple" or "Compound" calculation methods. Includes also a grid table for projection results.
 
-![a](https://sourceforge.net/p/ircalc/screenshot/screenshot.89.png "IRCalc")
+*This project is developed with Microsoft Visual Studio 2010 and is available for *non-comercial* use.*
 
-##Distribution
+##Operational Systems
+- Windows 7 (tested only)
+
+##Languages
+- En-Us
+- Pt-Br
+
+##Download
 This project is available for downloading at sourceforge [https://sourceforge.net/projects/ircalc/](https://sourceforge.net/projects/ircalc/ "Link for download")
+
+##Application
+![a](https://a.fsdn.com/con/app/proj/ircalc/screenshots/ircalc_main_screen.png "IRCalc")
 
 ##License
 This program is free software: you can redistribute it and/or modify
